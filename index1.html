@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .nav-link {
+            color: white;
+        }
+        .nav-link:hover {
+            color: grey;
+        }
+        .modalDiv:hover {
+            border: 1px solid lightblue;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg d-flex justify-content-between px-5" style="background-color: #000038;color: white;">
+        <div class="container">
+            <div>
+        <a href="" class="navbar-brand"><img src="./Edozzier-8@2x.png" alt="" width="100px"></a>
+        </div>
+
+        <!-- Navbar toggler -->
+         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarLinks">
+            <img src="./material-symbols-light--menu.svg" alt="" width="50px">
+         </button>
+
+        <div class="collapse navbar-collapse" id="navbarLinks">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Features</a>
+                <div class="dropdown-menu ps-3 pe-5 rounded-0 " style="background-color: #000038; 
+                color: white; width: 18vw;">
+                    <div class="w-100 bg-primary my-3" style="height: 5px;"></div>
+                    <a href="" class="nav-link">Payroll</a>
+                    <a href="" class="nav-link">Assets</a>
+                    <a href="" class="nav-link">HR</a>
+                    <a href="" class="nav-link">Exams and records</a>
+                    <a href="" class="nav-link">Automated payments</a>
+                </div>
+                </li>
+
+               <li class="nav-item">
+                <a href="" class="nav-link">Company</a> 
+                </li>
+
+                <li class="nav-item">
+                <a href="" class="nav-link">Pricing</a>
+                </li>
+
+                <li class="nav-item">
+                <a href="" class="nav-link">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                <a href="" class="nav-link">FAQs</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#ngmodal">NG</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    
+    </nav>
+
+    <div class="modal" id="ngmodal">
+        <div class="modal-dialog w-25 modal-dialog-centered">
+            <div class="modal-content bg-light border-0 p-3">
+                <p class="fw-medium">select your locale:</p>
+                <div class="border border-primary rounded-1 p-3 mb-2 modalDiv">
+                    <span style="width: 30px; height: 30px;" class="rounded-circle bg-secondary-subtle p-2">NG</span>
+                    <span>Nigeria</span>
+                </div>
+                <div class="border border-secondary rounded-1 p-3 mb-2 modalDiv">
+                    <span style="width: 30px; height: 30px;" class="rounded-circle bg-secondary-subtle p-2">AO</span>
+                    <span>Angola</span>
+                </div>
+                <div class="border border-secondary rounded-1 p-3 mb-2 modalDiv">
+                    <span style="width: 30px; height: 30px;" class="rounded-circle bg-secondary-subtle p-2">EG</span>
+                    <span>Egypt</span>
+                </div>
+                <div class="border border-secondary rounded-1 p-3 modalDiv">
+                    <span style="width: 30px; height: 30px;" class="rounded-circle bg-secondary-subtle p-2">KE</span>
+                    <span>Kenya</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> 
+</body>
+</html>
